@@ -1,7 +1,7 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "bd5676bff2aebfd112c3816c9d9a5720"
-application_url = "https://occupied-rl-mba-parts.trycloudflare.com"
+application_url = "https://situated-flame-qualities-writer.trycloudflare.com"
 embedded = true
 name = "wishlist-inspire"
 handle = "wishlist-inspire-318"
@@ -23,9 +23,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://occupied-rl-mba-parts.trycloudflare.com/auth/callback",
-  "https://occupied-rl-mba-parts.trycloudflare.com/auth/shopify/callback",
-  "https://occupied-rl-mba-parts.trycloudflare.com/api/auth/callback"
+  "https://situated-flame-qualities-writer.trycloudflare.com/auth/callback",
+  "https://situated-flame-qualities-writer.trycloudflare.com/auth/shopify/callback",
+  "https://situated-flame-qualities-writer.trycloudflare.com/api/auth/callback"
 ]
 
 [pos]
