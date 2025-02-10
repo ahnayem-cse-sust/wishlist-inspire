@@ -1,16 +1,11 @@
 import {
   Box,
   Card,
-  Layout,
-  Link,
-  List,
   Page,
   Text,
   BlockStack,
   InlineGrid,
   TextField,
-  useBreakpoints,
-  Divider,
   Button,
 } from "@shopify/polaris";
 import { TitleBar } from "@shopify/app-bridge-react";
@@ -34,6 +29,22 @@ export async function action({ request }) {
   // updates persistent data
   let settings = await request.formData();
   settings =Object.fromEntries(settings);
+
+  await db.settings.upsert({
+    where:{
+      id: '1'
+    },
+    update: {
+      id: '1',
+      name: settings.name,
+      description: settings.description
+    },
+    create: {
+      id: '1',
+      name: settings.name,
+      description: settings.description
+    }
+  })
 
   return Response.json(settings);
 }

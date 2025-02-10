@@ -33,6 +33,6 @@ model Session {
 
 model Settings {
   id            String    @id
-  shop          String
+  name          String
   description   String?
 }
