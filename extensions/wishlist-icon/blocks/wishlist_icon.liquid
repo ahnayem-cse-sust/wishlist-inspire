@@ -1,21 +1,30 @@
-{% assign avg_rating = block.settings.product.metafields.demo.avg_rating.value | round %}
-<span style="color:{{ block.settings.colour }}">
-  {% render 'stars', rating: avg_rating %}
-</span>
-{% if avg_rating >= 4 %}
-  <br>
-  <img src="{{ "thumbs-up.png" | asset_img_url: '15x' }}" height="15" width="15" loading="lazy">
-  {{ 'ratings.home.recommendationText' | t }}
-{% endif %}
-<svg viewBox="0 0 200 200">
-  <path d="M100,30 
-           C120,-20 200,20 100,130 
-           C0,20 80,-20 100,30" />
-</svg>
+<div class="wishlist-icon">
+  <div>
+    WWWWW
+    
+  </div>
+  <div class="wishlist-svg">
+    <svg viewBox="0 0 200 200">
+      <path d="M100,30 
+               C120,-20 200,20 100,130 
+               C0,20 80,-20 100,30" />
+    </svg>
+  </div>
+</div>
+
+
+
+<style>
+.wishlist-svg{
+  width: 50px;
+  height: 50px;
+}
+</style>
 {% schema %}
 {
   "name": "Wishlist Icon",
   "target": "section",
+  "text": "Wishlist",
   "settings": [
     { "type": "product", "id": "product", "label": "product", "autofill": true },
     { "type": "color", "id": "colour", "label": "Star Colour", "default": "#ff0000" }

@@ -1,7 +1,7 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "bd5676bff2aebfd112c3816c9d9a5720"
-application_url = "https://spectacular-emphasis-spaces-arrangement.trycloudflare.com"
+application_url = "https://offset-cuba-shelter-darkness.trycloudflare.com"
 embedded = true
 name = "wishlist-inspire"
 handle = "wishlist-inspire-318"
@@ -23,9 +23,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://spectacular-emphasis-spaces-arrangement.trycloudflare.com/auth/callback",
-  "https://spectacular-emphasis-spaces-arrangement.trycloudflare.com/auth/shopify/callback",
-  "https://spectacular-emphasis-spaces-arrangement.trycloudflare.com/api/auth/callback"
+  "https://offset-cuba-shelter-darkness.trycloudflare.com/auth/callback",
+  "https://offset-cuba-shelter-darkness.trycloudflare.com/auth/shopify/callback",
+  "https://offset-cuba-shelter-darkness.trycloudflare.com/api/auth/callback"
 ]
 
 [pos]
