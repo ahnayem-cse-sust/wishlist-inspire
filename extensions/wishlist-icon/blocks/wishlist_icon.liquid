@@ -7,10 +7,14 @@
   <img src="{{ "thumbs-up.png" | asset_img_url: '15x' }}" height="15" width="15" loading="lazy">
   {{ 'ratings.home.recommendationText' | t }}
 {% endif %}
-
+<svg viewBox="0 0 200 200">
+  <path d="M100,30 
+           C120,-20 200,20 100,130 
+           C0,20 80,-20 100,30" />
+</svg>
 {% schema %}
 {
-  "name": "Star Rating",
+  "name": "Wishlist Icon",
   "target": "section",
   "settings": [
     { "type": "product", "id": "product", "label": "product", "autofill": true },
