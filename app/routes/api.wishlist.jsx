@@ -42,7 +42,7 @@ export async function action({ request }) {
     const customerId = data.customerId;
     const productId = data.productId;
     const shop = data.shop;
-    const _action = data.action;
+    const _action = data._action;
 
     if (!customerId || !productId || !shop || !_action) {
         return Response.json({
@@ -63,8 +63,8 @@ export async function action({ request }) {
                 },
             });
 
-            response = Response.json({ message: "Product added to wishlist", method: _action, wishlist: true });
-            return cors(request, response);
+            response = Response.json({ message: "Product added to wishlist", method: _action, wishlisted: true });
+            return cors(request, response, { origin: "https://asl-dev-store.myshopify.com", methods: ["POST"] });
 
         case "PATCH":
             return Response.json({ message: "Success", method: "Patch" });
@@ -78,8 +78,8 @@ export async function action({ request }) {
                 },
             });
 
-            response = Response.json({ message: "Product removed from your wishlist", method: _action, wishlist: false });
-            return cors(request, response);
+            response = Response.json({ message: "Product removed from your wishlist", method: _action, wishlisted: false });
+            return cors(request, response, { origin: "https://asl-dev-store.myshopify.com", methods: ["POST"] });
         
         default:
             return new Response("Method Not Allowed", { status: 405});
